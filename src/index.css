@@ -1,0 +1,120 @@
+@import url(https://db.onlinewebfonts.com/c/31255a1d1395bb91aec77d16e2e26fdc?family=Rifton+Norm);
+
+:root,
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rifton Norm', cursive;
+}
+
+body {
+  background-color: #2b2e38;
+}
+
+.app {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+}
+
+.counter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url('/futchamps-wlcounter/assets/img/bg-rect-only.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 146px;
+}
+
+.mid {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mid > img {
+  cursor: pointer;
+}
+
+.wins{
+  color: rgb(0, 194, 32);
+  font-size: 56px;
+  width: 83px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.loses {
+  color: rgb(228, 0, 0);
+  font-size: 56px;
+  width: 83px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.alt-counter {
+  margin-top: 20px;
+  width: 276px;
+  height: 146px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.alt-counter-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rivals {
+  margin-top: 20px;
+  width: 257px;
+  height: 135px;
+  background-image: url('/futchamps-wlcounter/assets/img/rivals.png');
+  align-self: flex-end;
+}
+
+.rivals-counter {
+  display: flex;
+  height: 92%;
+  padding-right: 16px;
+  justify-content: end;
+  align-items: center;
+}
+
+input[type='number'] {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 42%;
+  font-size: 56px;
+  color: white;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.champs {
+  perspective: 1000px;
+  animation: flip 10s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  15% {
+    transform: rotateY(0deg);
+  }
+}
